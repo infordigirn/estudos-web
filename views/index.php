@@ -8,5 +8,14 @@
 </head>
 <body>
 	<h1>teste git teste merge</h1>
+	<div class="teste">
+		<nav>
+			<ul>
+				<li>Git</li>
+				<li>Commit</li>
+				<li>Merge</li>
+			</ul>
+		</nav>
+	</div>
 </body>
 </html>
