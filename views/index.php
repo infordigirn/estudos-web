@@ -7,6 +7,6 @@
 	<link rel="stylesheet" href="">
 </head>
 <body>
-	<h1>teste git</h1>
+	<h1>teste git teste merge</h1>
 </body>
 </html>
