@@ -7,8 +7,7 @@
 	<link rel="stylesheet" href="">
 </head>
 <body>
-	<h1>
-	Ggit teste mergeStatus</h1>
+	<h1>git teste mergeStatus</h1>
 	<form action="index_submit" method="<" accept-charset="utf-8">
 		<label><input type="text/submit/hidden/button/etc" name="nome">Nome:</label>
 		<input type="text" name="nome">
