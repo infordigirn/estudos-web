@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="">
 </head>
 <body>
-	<h1>teste git teste merge</h1>
+	<h1>
+	Ggit teste mergeStatus</h1>
 	<form action="index_submit" method="<" accept-charset="utf-8">
 		<label><input type="text/submit/hidden/button/etc" name="nome">Nome:</label>
 		<input type="text" name="nome">
@@ -15,9 +16,9 @@
 	<div class="teste">
 		<nav>
 			<ul>
-				<li>Git</li>
-				<li>Commit</li>
-				<li>Merge</li>
+				<li>GitBranch</li>
+				<li>NewCommit</li>
+				<li>automaticMerge</li>
 			</ul>
 		</nav>
 	</div>
