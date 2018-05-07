@@ -1,4 +1,4 @@
 <?php
 require_once 'crud.php'; 
-$banco = new Banco("localhost","prestador","root","32051217");
+$banco = new Banco("localhost","prestador","root","");
 ?>

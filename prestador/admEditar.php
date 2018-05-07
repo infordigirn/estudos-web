@@ -10,6 +10,7 @@ if(isset($_POST['nome']) && !empty('nome')){
     $banco->update("usuarios", 
                 array("nome" => $_POST['nome'],
                       "email"=> $_POST['email'],
+                      "profissao" => $_POST['profissao'],
                       "nivel" => $_POST['nivel']),
                 array("id" => $id )
                  

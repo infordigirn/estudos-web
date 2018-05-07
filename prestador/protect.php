@@ -1,5 +1,5 @@
 <?php
-
+/*
 if(!function_exists("protect")){
 	function protect(){
 
@@ -12,5 +12,5 @@ if(!function_exists("protect")){
 		}
 	}
 }
-
+*/
 ?>

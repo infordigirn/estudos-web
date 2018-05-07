@@ -1,7 +1,7 @@
 <?php
 session_start();
 require 'crud.php';
-$banco = new Banco("localhost","prestador","root","32051217"); 
+$banco = new Banco("localhost","prestador","root",""); 
 if(isset($_GET['id']) && !empty($_GET['id'])){
     $id = addslashes($_GET['id']);
 

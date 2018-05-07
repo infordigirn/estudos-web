@@ -4,7 +4,7 @@ session_start();
 require 'crud.php'; //CHAMADA A CLASSE CRUD
 require 'config.php'; // CHAMA O ARQUIVO DE CONEXÃO
 
-$banco = new Banco("localhost","prestador","root","32051217"); //CRIA OBJETO BANCO
+$banco = new Banco("localhost","prestador","root",""); //CRIA OBJETO BANCO
 //VERIFICA SE EXISTE SESSÃO
 if(empty($_SESSION['prestador'])){
     header("Location: login2.php");
@@ -40,6 +40,7 @@ echo "Bem Vindo ".$nome;
     <tr>      
       <th scope="col">Usuario</th>
       <th scope="col">Email</th>
+      <th scope="col">Profissão</div>
       <th scope="col">Nível</th>
       <th scope="col">Ação</th>
     </tr>
@@ -53,6 +54,7 @@ echo "Bem Vindo ".$nome;
             echo "<tr>";
                 echo "<th scope='row'>".$usuario['nome']."</th>";
                 echo "<td>".$usuario['email']."</td>";
+                echo "<td>".$usuario['profissao']."</div>";                
                 echo "<td>".$usuario['nivel']."</td>";
                 echo '<td><a href="editar.php?id='.$usuario['id'].'"><button type="submit" class="btn btn-primary">Alterar</button></a> - <a href="excluir.php?id='.$usuario['id'].'"><button type="submit" class="btn btn-danger">Excluir</button></a></td>';
             echo "</tr>";

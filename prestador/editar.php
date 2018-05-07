@@ -22,7 +22,10 @@
                 <label for="inputEmail" class="control-label">Email</label>
                 <input name="email" class="form-control" value="<?php echo $dado['email']; ?>" type="email">
         </div>
-
+        <div class="form-group">
+            <label for="textProfissao">Profissão</label>
+            <input type="text" name="profissao" class="form-control" value"<?= $dado['profissao'];?>" />
+        </div>
          <div class="form-group">
             <label for="textNivel" class="control-label">Nivel</label>
             <input name="nivel" class="form-control" value="<?php echo $dado['nivel']; ?>" type="text">
