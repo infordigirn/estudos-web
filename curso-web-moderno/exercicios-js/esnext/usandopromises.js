@@ -22,14 +22,14 @@ const getTurma = letra => {
     })
 }
 
-// let nomes = []
+// let nomesA = []
 // getTurma('A').then(alunos => {
-//     nomes = nomes.concat(alunos.map(a => `A: ${a.nome}`))
+//     nomesA = nomesA.concat(alunos.map(a => `A: ${a.nome}`))
 //     getTurma('B').then(alunos => {
-//         nomes = nomes.concat(alunos.map(b => `B: ${b.nome}`))
+//         nomesA = nomesA.concat(alunos.map(b => `B: ${b.nome}`))
 //         getTurma('C').then(alunos => {
-//             nomes = nomes.concat(alunos.map(c => `C: ${c.nome}`))
-//             // console.log(nomes)
+//             nomesA = nomesA.concat(alunos.map(c => `C: ${c.nome}`))
+//             // console.log(nomesA)
 //         })
 //     })    
 // })
