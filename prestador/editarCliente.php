@@ -27,6 +27,7 @@ if($sql->rowCount() > 0){
     $sql = $sql->fetch();
     $nome = $sql['nome'];
     $email = $sql['email'];
+    $teste = $sql['apagar'];
 }
 
 
