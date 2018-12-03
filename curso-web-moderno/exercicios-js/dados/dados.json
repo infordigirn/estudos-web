@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1, "nome": "Rossie", "imagem": "<caminho da imagem>"
+    },{
+        "id": 2, "nome": "Mary", "image": "<caminho da imagem>"
+    },{
+        "id": 3, "nome": "Myca", "imagem": "<caminho da imagem>"
+    },{
+        "id": 4, "nome": "Meghan", "imagem": "<caminho da imagem>"
+    },{
+        "id": 5, "nome": "Sharlene", "imagem": "<caminho da imagem>"
+    },{
+        "id": 6, "nome": "Perice", "imagem": "<caminho da imagem>"
+    },{
+        "id": 7, "nome": "Micheil", "imagem": "<caminho da imagem>"
+    },{
+        "id": 8, "nome": "Dionysus", "imagem": "<caminho da imagem>"
+    },{
+        "id": 9, "nome": "Nat", "imagem": "<caminho da imagem>"
+    },{
+        "id": 10, "nome": "Bone", "imagem": "<caminho da imagem>"
+    }
+]

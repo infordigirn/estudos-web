@@ -1,0 +1,22 @@
+GET http://localhost:3003/api/todos
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-19T012312.200.json
+
+###
+
+GET http://localhost:3003/api/todos
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-19T011104.404.html
+
+###
+
+GET http://localhost:8080/api/todos
+Accept: */*
+Cache-Control: no-cache
+
+###
+
