@@ -8,6 +8,90 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
         /* ... */
+        *{ margin: 0; box-sizing: border-box; }
+        body { background: #ccc; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; }
+        .cabecalho { 
+            align-items: center; 
+            background-color: rgb(56, 41, 41); 
+            border-bottom: solid 5px darkcyan;
+            display: flex; 
+            height: 80px;
+            position: relative;
+            width: 100%;
+        }
+
+        a {  color: #fff; text-decoration: none; }
+        img { margin: 0px 15px; height: 50px; }
+        ul { display: flex; list-style: none; }
+        li {                                
+            display: flex; 
+            height: 50px;             
+            margin: 0px 2px; 
+            width: 80px;      
+        }
+
+        /* li:hover { background-color: darkcyan; } */
+
+        .menu a { margin: auto; }
+
+        .menu a:hover,
+        .menu a.selected { 
+            align-items: center;
+            background-color: darkcyan;
+            border-bottom: solid 2px violet;
+            color: #000; 
+            display: flex; 
+            height: 50px; 
+            justify-content: center;
+            margin: auto; 
+            width: 80px; 
+        }
+
+        .autenticacao { margin: 0px 15px; position: absolute; right: 0; }
+        .botao.destaque {
+            background-color: tomato;
+            border-radius: 25px;
+            color: #fff;
+            margin: 0px 3px;
+            padding: 7px 10px;
+        }
+
+        .botao.destaque:active {
+            box-shadow: none;
+            box-shadow: 2px 2px 1px 1px #777;
+        }
+
+        .menu-toggle {
+            background-color: #493b3b;
+            border: none;
+            border: solid 1px #777;
+            border-radius: 5px;
+            color: #fff;
+            height: 40px;
+            margin: 0px 20px;
+            position: absolute;
+            right: 0;
+            width: 40px;
+        }
+
+        @media(min-width: 679px) {
+            .menu-toggle {
+                display: none;
+            }           
+        }
+
+        @media(max-width: 680px) {
+            .menu {
+                display: none;
+            }
+        }
+
+        @media(max-width: 910px) {
+            .autenticacao {
+                display: none;
+            }
+        }
+
     </style>
 </head>
 
@@ -44,7 +128,15 @@
     </header>
 
     <script>
-        // ...
+        window.onhashchange = function(e) {
+            const oldURL = e.oldURL.split('#')[1]
+            const newURL = e.newURL.split('#')[1]
+            console.log(oldURL, newURL)
+            const oldLink = document.querySelector(`.menu a[href='#${oldURL}']`)
+            const newLink = document.querySelector(`.menu a[href='#${newURL}']`)
+            oldLink && oldLink.classList.remove('selected')
+            newLink && newLink.classList.add('selected')
+        }
     </script>
 </body>
 
