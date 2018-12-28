@@ -9,7 +9,9 @@ require('./gulpTasks/server')
 gulp.task('default', () => {
     if(util.env.production) {
         sequence('deps', 'app')
+        // gulp.start('deps', 'app')
     } else {
         sequence('deps', 'app', 'server')
+        // gulp.start('deps', 'app', 'server')
     }
 })
