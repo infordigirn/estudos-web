@@ -1,0 +1,11 @@
+{
+    "users": [{
+        "id": 1,
+        "name": "Renato Nascimento",
+        "email": "infordigirn@gmail.com"
+    }, {
+        "id": 2,
+        "name": "Glenda Oliveira",
+        "email": "glendaoliveira2009@gmail.com"
+    }]
+}
