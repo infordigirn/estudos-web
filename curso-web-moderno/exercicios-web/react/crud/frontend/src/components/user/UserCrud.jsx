@@ -39,9 +39,9 @@ export default class UserCrud extends Component {
             })
     }
 
-    getUpdatedList(user) {
+    getUpdatedList(user, add = true) {
         const list = this.state.list.filter(u => u.id !== user.id)
-        if(user) list.unshift(user)
+        if (add) list.unshift(user)
         return list
     }
 
@@ -58,8 +58,8 @@ export default class UserCrud extends Component {
                     <div className="col-12 col-md-6">
                         <div className="form-group">
                             <label>Nome</label>
-                            <input type="text" className="form-control" 
-                                name="name" 
+                            <input type="text" className="form-control"
+                                name="name"
                                 value={this.state.user.name}
                                 onChange={e => this.updateField(e)}
                                 placeholder="Digite o nome..."
@@ -79,7 +79,7 @@ export default class UserCrud extends Component {
                         </div>
                     </div>
                 </div>
-                <hr/>
+                <hr />
 
                 <div className="row">
                     <div className="col-12 d-flex justify-content-end">
@@ -104,7 +104,7 @@ export default class UserCrud extends Component {
 
     remove(user) {
         axios.delete(`${baseUrl}/${user.id}`).then(resp => {
-            const list = this.getUpdatedList(null)
+            const list = this.getUpdatedList(user, false)
             this.setState({ list })
         })
     }
@@ -114,6 +114,7 @@ export default class UserCrud extends Component {
             <table className="table mt-4">
                 <thead>
                     <tr>
+                        <th>Code</th>
                         <th>Nome</th>
                         <th>E-mail</th>
                         <th>Ações</th>
@@ -130,6 +131,7 @@ export default class UserCrud extends Component {
         return this.state.list.map(user => {
             return (
                 <tr key={user.id}>
+                    <td>{user.id}</td>
                     <td>{user.name}</td>
                     <td>{user.email}</td>
                     <td>
@@ -137,7 +139,7 @@ export default class UserCrud extends Component {
                             onClick={() => this.load(user)}>
                             <i className="fa fa-pencil"></i>
                         </button>
-                        <button className="btn btn-danger"
+                        <button className="btn btn-danger ml-2"
                             onClick={() => this.remove(user)}>
                             <i className="fa fa-trash"></i>
                         </button>
@@ -149,8 +151,9 @@ export default class UserCrud extends Component {
 
     render() {
         return (
-            <Main { ...headerProps }>
+            <Main {...headerProps}>
                 {this.renderForm()}
+                {this.renderTable()}
             </Main>
         )
     }

@@ -1,18 +1,29 @@
 {
-    "users": [{
-            "name": "Renato Nascimento",
-            "email": "infordigirn@gmail.com",
-            "id": 1
-        },
-        {
-            "name": "Glenda Oliveira",
-            "email": "glendaoliveira2009@gmail.com",
-            "id": 2
-        },
-        {
-            "name": "Caroline Pelissari",
-            "email": "carolinepelissari@gmail.com",
-            "id": 3
-        }
-    ]
+  "users": [
+    {
+      "name": "Renato Nascimento Oliveira",
+      "email": "infordigidevelopment@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Glenda Oliveira",
+      "email": "glendaoliveira2009@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Caroline Pelissari",
+      "email": "carolinepelissari@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Michele Pelissari",
+      "email": "michelepelissari@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "André Herculano",
+      "email": "andreherculano@gmail.com",
+      "id": 5
+    }
+  ]
 }
